@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LivingStar Ministries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Libre Baskerville', serif;
+      background: radial-gradient(circle at top, #17304f 0%, #09111f 45%, #02060d 100%);
+      color: #f5efe2;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      background-image:
+        radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.8), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255,215,140,0.6), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.5), transparent);
+      background-size: 180px 180px;
+      opacity: 0.35;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 780px;
+      filter: drop-shadow(0 0 25px rgba(255, 209, 102, 0.25));
+      margin-bottom: 1.5rem;
+    }
+
+    .tagline {
+      font-size: 1.3rem;
+      color: #e6c98f;
+      letter-spacing: 1px;
+      max-width: 800px;
+      margin: auto;
+      font-style: italic;
+    }
+
+    .book-section {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      align-items: center;
+      margin-top: 4rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      padding: 3rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+    }
+
+    .book-cover {
+      width: 100%;
+      border-radius: 22px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      border: 2px solid rgba(255,215,140,0.2);
+    }
+
+    .book-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.8rem;
+      color: #ffe2a8;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .price {
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding: 0.8rem 1.3rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #e4b55b, #fff0c8);
+      color: #1a1408;
+      font-weight: bold;
+      font-size: 1.05rem;
+      box-shadow: 0 5px 18px rgba(255,215,140,0.35);
+    }
+
+    .description {
+      font-size: 1rem;
+      color: #f0eadf;
+    }
+
+    .description p {
+      margin-bottom: 1.3rem;
+    }
+
+    .quote {
+      margin-top: 1.5rem;
+      padding-left: 1.2rem;
+      border-left: 3px solid #d8aa52;
+      color: #f7ddb1;
+      font-style: italic;
+    }
+
+    .footer {
+      margin-top: 4rem;
+      text-align: center;
+      padding: 2rem 1rem 4rem;
+      color: #d9cbb0;
+      font-size: 0.95rem;
+    }
+
+    .footer strong {
+      color: #ffe0a1;
+    }
+
+    .contact-link {
+      color: #ffe4ad;
+      text-decoration: none;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      width: 120px;
+      height: 2px;
+      margin: 2rem auto;
+      background: linear-gradient(to right, transparent, #e8bc63, transparent);
+    }
+
+    @media (max-width: 900px) {
+      .book-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .book-title {
+        font-size: 2.2rem;
+      }
+
+      .description {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <div class="container">
+    <section class="hero">
+      <img src="LivingStar logo 1.jpg" alt="LivingStar Ministries Logo" class="logo">
+      <div class="divider"></div>
+      <p class="tagline">
+        Sharing the light of Jesus Christ through Biblical teaching, historical insight, and Gospel mission.
+      </p>
+    </section>
+
+    <section class="book-section">
+      <div>
+        <img src="final 7 churches cover 2.png" alt="Seven Letters You Were Meant to Read Book Cover" class="book-cover">
+      </div>
+
+      <div>
+        <h1 class="book-title">Seven Letters You Were Meant to Read</h1>
+
+        <div class="price">
+          Digital Book — $7 • 75 Pages
+        </div>
+
+        <div class="description">
+          <p>
+            The Bible closes with the amazing apocalyptic book of Revelation. In His cosmic revealing, Jesus shares relevant insight for today's anxiety-ridden world. Written in clear and cryptic language are promises, warnings, and secrets for believers of every age to ponder and unlock.
+          </p>
+
+          <p>
+            <em>Seven Letters You Were Meant to Read©️</em> is written to help the average tourist of Ephesus easily understand the significance of the messages and hear the voice of Jesus Christ. Accurate historical context, archeological insights, and vivid Biblical connections make this book deeply useful.
+          </p>
+
+          <p>
+            Its format, simplicity, and readability make it different from other books on the subject. The author lived 10 years in Smyrna (Izmir), Türkiye, and has brought together inspiration and wisdom from the many tours he has led, personal meetings with dozens of scholars, and readings from ancient writings and modern teachers.
+          </p>
+
+          <div class="quote">
+            “These insights combine to create a powerful read for the non-religious encountering the Seven Churches for the first time — and exciting new discoveries for those who read the Bible often.”
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p><strong>LivingStar Ministries</strong></p>
+      <p>9521 N. Valley Trail, Ooltewah TN 37363, USA</p>
+      <br>
+      <p>
+        Contact:
+        <a class="contact-link" href="mailto:byardparks@gmail.com">
+          byardparks@gmail.com
+        </a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>
